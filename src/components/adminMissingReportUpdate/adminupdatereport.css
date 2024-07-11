@@ -1,0 +1,141 @@
+.adminReportUpdate{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    border: 2px solid #788097;
+    margin: 2rem;
+    border-radius: 20px;
+}
+.adminReportUpdate h1{
+   padding-left: 2rem;
+}
+.adminReportUpdate .adminReportUpdImg{
+    flex: 1 1 ;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+.adminReportUpdate .adminReportUpdDet{
+flex: 1 1;
+/* margin: 10px; */
+justify-content: center;
+align-items: center;
+margin: auto;
+margin-left: 10px;
+
+}
+.adminReportUpdImg>img{
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow:  0px 19px 60px rgb(0,0,0,0.8) ;
+    cursor: pointer;
+}
+.adminReportUpdImg .btndiv{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+.adminReportUpdImg .btndiv .btns{
+   width: 10rem;
+   /* background:  linear-gradient(180deg, #ff919d 0%, #fc929d 100%); */
+   background: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%);
+   padding-top: .5rem;
+   padding-bottom: 0.5rem;
+   font-size: 18px;
+   color: bisque;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: all .3s ease-in-out;
+}
+.adminReportUpdImg .btndiv .btns1{
+    width: 10rem;
+    background:  linear-gradient(180deg, #ff919d 0%, #fc929d 100%);
+    /* background: linear-gradient(180deg, #bb67ff 0%, #c484f3 100%); */
+    padding-top: .5rem;
+    padding-bottom: 0.5rem;
+    font-size: 18px;
+    color: bisque;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+ }
+.btns:hover ,  .btns1:hover{
+    box-shadow:0px 9px 60px rgb(0,0,0,0.8);
+}
+
+.adminReportUpdDetdiv{
+    background-color :rgba(207, 201, 201, 0.5);
+    width : 75%;
+    border-radius: 10px;
+    padding: 1rem; 
+}
+.adminReportUpdDetdiv h1{
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+.adminReportUpdDetdiv p{
+   padding: .5rem;
+   font-size: 1.2rem;
+}
+.adminReportUpdDetdiv p span{
+   font-weight: bold;
+   color: gray;
+ }
+ @media screen and (max-width : 1200px) {
+   
+    .adminReportUpdate{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border: 2px solid #788097;
+        margin: 2rem;
+        border-radius: 20px;
+    }
+    .adminReportUpdate .adminReportUpdDet{
+        flex: 1 1;
+        /* margin: 10px; */
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+       
+        }
+        .adminReportUpdDetdiv{
+            background-color :rgba(207, 201, 201, 0.5);
+            width : 100%;
+            border-radius: 10px;
+            padding: 1rem; 
+        }
+}
+@media screen and (max-width : 512px) {
+    .adminReportUpdate{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2rem;
+        flex-wrap: wrap;
+        width: 80vw;
+        border: 2px solid #788097;
+        margin: 2rem;
+        border-radius: 20px;
+    }
+    .adminReportUpdImg>img{
+        width: 85%;
+        border-radius: 10px;
+        box-shadow:  0px 19px 60px rgb(0,0,0,0.8) ;
+        cursor: pointer;
+    }
+    .adminReportUpdDetdiv{
+        background-color :rgba(207, 201, 201, 0.5);
+        width : 90%;
+        border-radius: 10px;
+        padding: 1rem; 
+    }
+}

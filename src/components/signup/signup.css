@@ -1,0 +1,86 @@
+.signup-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+   overflow-x: hidden;
+}
+/* .signup-container h1{
+    padding-top: 7rem;
+   
+} */
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 2rem; */
+    gap: 1rem;
+}
+.signup-form h1{
+    margin-bottom: 2rem;
+}
+.signup-form input{
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background:wheat;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    width: 22rem;
+}
+.signup-btn{
+   padding: .6rem 2rem;
+   font-size: 1.3rem;
+   border-radius: 2rem;
+   width: 18rem;
+   background: black;
+   color: #F8BF7C;
+   margin-top: 2rem;
+   font-weight: 600;
+   cursor: pointer;
+}
+.signup-btn-div{
+    display: flex;
+    justify-content: center;
+}
+.signup-btn:hover{
+    width: 19rem;
+    transition: all .3s ease-in-out;
+}
+.signup-to-login{
+    padding: 2rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.link-color{
+    color: #5c3c17;
+    border-bottom: 2px solid #5c3c17;
+    font-weight: 600
+}
+.error-message{
+    color: red;
+    padding-top: 1rem;
+    text-align: center;
+}
+@media screen and (max-width: 360px){
+   
+    .signup-form h1{
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .signup-form input{
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        background:wheat;
+        border: none;
+        color: black;
+        font-size: 1rem;
+        width: 18rem;
+    }
+}

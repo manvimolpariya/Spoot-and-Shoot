@@ -1,0 +1,9 @@
+ body{
+  background: rgb(184,154,118);
+background: radial-gradient(circle, rgba(184,154,118,1) 11%, rgba(39,45,51,1) 81%);
+width: 100vw;
+height: 100vh;
+overflow-x: hidden;
+font-family: 'Baloo Bhai 2', sans-serif;
+} 
+

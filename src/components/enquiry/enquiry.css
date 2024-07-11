@@ -1,0 +1,103 @@
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content:center;
+    width: 100vw;
+    padding: 8rem 10rem;
+}
+.enuiry-container{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 1rem;
+}
+.report-present{
+    display : flex;
+    flex-direction: column;
+    padding: 1rem;
+    background: #29241e;
+    border: 1px solid #221E19;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4),
+    -3px 3px 4px rgba(0, 0, 0, 0.4);
+}
+.report-present:hover{
+ box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1);
+}
+.report-present img{
+ object-fit:fill;
+ padding: 1rem;
+ width: 100%;
+ background: wheat;
+ border-radius: 10px;
+ height: 15rem;
+}
+.report-present h4{
+    margin-top: 4px;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color:#FCCB72 ;
+    padding: 3px;
+    text-align: left;  
+}
+.report-present p{
+    margin-top: 2px;
+    font-weight: 500;
+    text-align: left; 
+    font-size: 1.1rem;
+    color: #FCCB72; 
+    padding: 2px 0px;
+    letter-spacing: 1px;
+}
+.report-present span {
+    color :wheat
+}
+
+@media screen and (max-width : 1040px){
+    .enuiry-container{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        gap: 1rem;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content:center;
+        width: 100vw;
+        padding: 8rem 7rem;
+    }
+}
+@media screen and (max-width : 850px){
+    section{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content:center;
+        width: 100vw;
+        padding: 8rem 2rem;
+    }
+    .enuiry-container{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 1rem;
+    }
+}
+@media screen and (max-width : 500px){
+    .section-for-enqury{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content:center;
+        width: 100vw;
+        padding: 8rem 1rem;
+    }
+    .enuiry-container{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        gap: 1rem;
+    }
+}

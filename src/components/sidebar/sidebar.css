@@ -1,0 +1,108 @@
+.sidebar{
+display: flex;
+flex-direction: column;
+position: relative;
+padding-top: 4rem;
+transition: all 300ms ease;
+font-family: 'Baloo Bhai 2', sans-serif;
+}
+.sidebarlogo{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 20px;
+    gap : 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+.sidebarlogo>img{
+    width: 3rem;
+    height: 3rem;
+}
+.sidebarlogo>span>span{
+    color :#ff919d;
+    
+}
+.sidebar-menu{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sidebarMenuItem{
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    gap: 1rem;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    font-size: 14px;
+    border-radius: 0.7rem;
+}
+.sidebarMenuItem:hover{
+    cursor: pointer;
+}
+.sidebaractive {
+    background: #f799a354 ;
+    margin-left: 0;
+}
+.sidebaractive::before{
+    content: "";
+    height: 100%;
+    width: 8px;
+    background: #ff919d;
+    margin-right: calc(1rem - 8px);
+}
+.sidebar-menu .sidebarMenuItem:last-child{
+    position: absolute;
+    bottom: 2.3rem;
+    width: 100%;
+}
+.sidebarMenuItem  .LinkItems{ 
+   color: black;
+   display: flex;
+   gap: .5rem;
+}
+.bars{
+    display: none;
+}
+@media screen and (max-width : 1200px) {
+    .sidebar-menu>span{
+        display: none;
+    }
+    .sidebarlogo{
+        display: none;
+    }
+}
+@media screen and (max-width : 768px) {
+    .sidebar-menu{
+       position: fixed;
+       z-index: inherit;
+       background: #ffe0e0;
+       width: 55%;
+       padding-right: 1rem;
+       height: 100%;
+    }
+    .sidebar-menu>span{
+        display: block;
+    }
+    .sidebarlogo{
+        display: flex;
+    }
+    .sidebar-menu .sidebarMenuItem:last-child{
+        position: relative;
+        margin-top: 2rem;
+    }
+    .bars{
+        display: flex;
+        position: fixed;
+        top: 2rem;
+        z-index: 9;
+        background: #ffe0e0;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

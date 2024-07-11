@@ -1,0 +1,77 @@
+.report-rise-form{
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7), #a5813d), url(https://tse2.mm.bing.net/th?id=OIP.mo6qE_poGCT4XFlPr4b1RQHaE7&pid=Api&P=0&h=180);
+    background-position:center;
+    background-size: cover;
+    justify-content: center;
+    
+}
+form{
+    width: 90%;
+    max-width: 700px;
+    margin-top: 8rem;
+}
+.input-group {
+  margin-bottom: 33px;
+  position: relative;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    background: transparent;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition:0.2s; 
+}
+#btn-report{
+    padding: 10px 0;
+    color:#F8BF7C;
+    background: transparent;
+    outline: none;
+    border: 1px solid #F8BF7C;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+#btn-report:hover{
+    box-shadow:3px 5px 10px  rgba(27, 22, 18, 0.2),
+    3px -5px 10px  rgba(27, 22, 18, 0.2);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+input:focus~label{
+ top: -35px;
+ font-size: 14px;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{ top: -35px;
+  font-size: 14px;
+}
+.missing-report-row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.missing-report-row-1 .input-group{
+    flex-basis: 48%;
+}

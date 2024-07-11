@@ -1,0 +1,46 @@
+
+.MuiTableRow-root>*{
+    padding: 10px;
+ }
+ 
+ .MuiTableRow-root.MuiTableRow-head>*{
+     font-weight: bold !important;
+   
+ }
+ .MuiTableRow-root.css-34nofg-MuiTableRow-root{
+    font-size: 1.3rem!important;
+ }
+ .table1{
+    padding: 15px;
+    border-radius: 10px;
+    width: 95%;
+ }
+ .table1 td, th{
+     /* border: none!important; */
+     font-size: 1rem!important;
+ }
+ .table1:first-child{
+     border-radius: 0.7rem !important;
+ }
+.table1 tr{
+    font-size: 2rem;
+}
+ .table1 h3 {
+    margin: 15px;
+    
+ }
+ @media screen and (max-width : 1200px) {
+     .table1{
+         width: 170%;
+         margin-top:2rem ;
+     }
+ }
+ @media screen and (max-width : 768px) {
+     .table1{
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 18rem;
+     }
+ }

@@ -1,0 +1,108 @@
+body{
+    font-family: sans-serif;
+}
+.admin{
+  font-size: 2rem;
+  color: #F8BF7C;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 30px;
+    background-color: #F8BF7C;
+    box-shadow:0 5px 15px rgba(0,0,0, 0.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left :50%;
+    transform: translate(-50%);
+   z-index: 2;
+}
+.logo{
+  justify-self: start;
+  cursor: pointer;
+  background: black;
+  padding-left: .6rem;
+  padding-right: .6rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  border-radius: 50%;
+}
+.menu-icons{
+  display: none;
+}
+.btn-login{
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  background: black;
+  color: #F8BF7C;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.btn-signup{
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  color: black;
+  background: transparent;
+  cursor: pointer;
+}
+.btn-signup:hover{
+  background: black;
+  color: white;
+}
+.btn-logout{
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 40px;
+  background: black;
+  color: #F8BF7C;
+  letter-spacing: 1px;
+ 
+  cursor: pointer;
+}
+.btn-logout:hover{
+  color: black;
+  background: white;
+}
+.btns-handler{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.cursor-pos{
+  cursor: pointer;
+}
+@media screen and (max-width : 850px){
+  .menu-icons{
+    display: block;
+  }
+}
+@media screen and (max-width : 540px){
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 30px;
+    background-color: #F8BF7C;
+    box-shadow:0 5px 15px rgba(0,0,0, 0.25);
+    width: 100%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left :50%;
+    transform: translate(-50%);
+   z-index: 2;
+}
+}

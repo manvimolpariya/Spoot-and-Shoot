@@ -1,0 +1,8 @@
+.error{
+    background-image: linear-gradient(rgba(0,0,0,0.1), #685c47) ,url("/Error-404.png");
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
